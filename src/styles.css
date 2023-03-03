@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+nav{
+    display: flex;
+    background-color: #02325a;
+    height: 100px;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-radius: 3px;
+}
+.nav-title{
+    color: white;
+    font-size: 40px;
+    align-self: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-items > li{
+    list-style-type: none;
+    padding: 0 20px;
+    position:relative;
+}
+Button{
+    padding: 10px;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size:14px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(221, 226, 230); 
+}
+Button:hover{
+    background-color: rgb(192, 195, 197); 
+}
+Button:active{
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+.ProductDetails{
+    padding: 10px;
+    border: solid 1px;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    border-radius: 7px;
+    
+}
+.products{
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+@media screen and (min-width: 768px) {
+    .products{
+    grid-template-columns: repeat(2, 1fr); 
+}     
+}
+@media screen and (min-width: 960px) {
+    .products{
+    grid-template-columns: repeat(3, 1fr); 
+}     
+}
+@media screen and (min-width: 1200px) {
+    .products{
+    grid-template-columns: repeat(4, 1fr); 
+}     
+}
+.delete-checkbox{
+    float: left;
+}
+.footer {
+    position: sticky;
+    top: 100%;
+    color: white;
+    text-align: center;
+    z-index: 10;
+    height: 60px;
+    background-color: #02325a;
+    border-radius: 3px;
+    padding: 15px;
+  }
+  .addForm{
+    padding-left: 20px;
+    padding-top:20px;
+  }
+  .app{
+    min-height: 100vh;
+    margin: 0;
+  }
+  /* new try */
+  /* .card {
+    border: solid 1px;
+    margin: 5px;
+    text-align: center;
+
+  }
+  .delete-checkbox{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+  } */
